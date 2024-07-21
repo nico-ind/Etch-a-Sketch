@@ -20,6 +20,11 @@ for (let i = 0; i < gridSize; i++) {
             // Add class to container
             rowELement.classList.add('elementDiv');
             rowContainer.appendChild(rowELement);
+
+            // Add hover event listener to every rowELement
+            rowELement.addEventListener('mouseover', () => {
+                rowELement.style.backgroundColor = 'black'
+            })
         }
 
     container.appendChild(rowContainer);
